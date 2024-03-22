@@ -5,7 +5,7 @@ from kivymd.uix.textfield import MDTextField
 from kivymd.uix.dialog import MDDialog
 from kivymd.uix.label import MDLabel
 
-from data import user
+from DataBase.data import user
 
 
 class ProfileScreen(Screen):

@@ -3,7 +3,7 @@ from kivy.uix.floatlayout import FloatLayout
 from kivymd.uix.button import MDFlatButton,MDRectangleFlatButton
 from kivymd.uix.textfield import MDTextField
 from kivymd.uix.dialog import MDDialog
-from data import user
+from DataBase.data import user
 
 
 

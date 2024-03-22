@@ -7,11 +7,11 @@ def init_data_base():
 
     """
     cursor.execute("CREATE TABLE Users (Email TEXT, Age INTEGER, Height INTEGER, Weight INTEGER, Password INTEGER, Language TEXT);")
-    cursor.execute("CREATE TABLE Values_Graph(Password INTEGER, X TEXT, Y INTEGER);")
+    cursor.execute("CREATE TABLE Values_Graph(Password INTEGER, X TEXT, Y REAL);")
     print("Successful creation of database")
 
 
-con = connect(rf'C:\Users\Anne\PycharmProjects\AppWithKivymd\Screens\dataBase.sqLite')
+con = connect(rf'../Screens/dataBase.sqLite')
 cursor = con.cursor()
 
 init_data_base()

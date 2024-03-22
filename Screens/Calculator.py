@@ -1,12 +1,11 @@
 import datetime
-from datetime import *
 
 from kivy.uix.screenmanager import Screen
 from kivy.uix.floatlayout import FloatLayout
 from kivymd.uix.button import MDFlatButton,MDRectangleFlatButton, MDFloatingActionButtonSpeedDial
 from kivymd.uix.textfield import MDTextField
 from kivymd.uix.dialog import MDDialog
-from data import user
+from DataBase.data import user
 from datetime import *
 
 
@@ -88,9 +87,9 @@ class CalculatorScreen(Screen):
             dialog.open()
 
         else:
-            diastolic = int(self.diastolic.text)
-            systolic = int(self.systolic.text)
-            pulse = int(self.pulse.text)
+            diastolic = float(self.diastolic.text)
+            systolic = float(self.systolic.text)
+            pulse = float(self.pulse.text)
 
             age = user.age
             weight = user.weight

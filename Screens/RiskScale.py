@@ -3,7 +3,6 @@ from kivy.uix.floatlayout import FloatLayout
 from kivymd.uix.button import MDFlatButton,MDRectangleFlatButton, MDRaisedButton
 from kivymd.uix.textfield import MDTextField
 from kivymd.uix.dialog import MDDialog
-from data import user
 
 
 class RiskScaleScreen(Screen):

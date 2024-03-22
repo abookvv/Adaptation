@@ -1,33 +1,14 @@
-from kivy.lang import Builder
-from kivy.metrics import dp
-from kivy.properties import StringProperty
-
-from kivy.factory import Factory
-from kivymd.uix.pickers import MDDatePicker
-from kivymd.uix.menu import MDDropdownMenu
-from kivymd.uix.relativelayout import MDRelativeLayout
-
-from kivy.uix.gridlayout import GridLayout
-from kivy.properties import ObjectProperty
-
-from kivymd.uix.button import MDRectangleFlatIconButton
-from kivymd.uix.gridlayout import GridLayout
-from kivymd.uix.dialog import MDDialog
 from kivymd.app import MDApp
 from kivymd.uix.button import MDFlatButton, MDRaisedButton, \
     MDRectangleFlatButton, MDTextButton, MDFloatingActionButtonSpeedDial
-from kivy.lang.builder import Builder
 from kivymd.uix.textfield import MDTextField
-from kivy.uix.boxlayout import BoxLayout
-from kivymd.uix.screen import Screen
 from kivy.uix.screenmanager import ScreenManager, Screen
 from kivy.uix.floatlayout import FloatLayout
 from kivymd.uix.label import MDLabel
 
 from kivymd.uix.dialog import MDDialog
-from kivymd.uix.list import OneLineAvatarIconListItem
 
-from data import data
+from DataBase.data import data
 '''
 '''
 

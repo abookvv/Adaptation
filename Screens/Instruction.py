@@ -2,8 +2,6 @@ from kivy.uix.screenmanager import Screen
 from kivy.uix.floatlayout import FloatLayout
 from kivymd.uix.button import MDFlatButton,MDRectangleFlatButton
 from kivymd.uix.label import MDLabel
-from data import user
-
 
 
 class InstructionScreen(Screen):

@@ -2,7 +2,7 @@
 from sqlite3 import *
 
 
-con = connect(rf'dataBase.sqLite')
+con = connect(rf'../Screens/dataBase.sqLite')
 cursor = con.cursor()
 
 
@@ -10,7 +10,7 @@ cursor = con.cursor()
 
 class User():
     current_user = 0
-    con = connect('dataBase.sqLite')
+    con = connect('../Screens/dataBase.sqLite')
     cursor = con.cursor()
 
     def __init__(self, email=0, password=0, age=0, weight=0, height=0, language="RUS"):
