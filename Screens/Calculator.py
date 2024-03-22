@@ -91,10 +91,10 @@ class CalculatorScreen(Screen):
             systolic = float(self.systolic.text)
             pulse = float(self.pulse.text)
 
-            age = user.age
+            age = float(user.age)
             weight = user.weight
             height = user.height
-
+            print(age, type(age))
             functional_change_index = 0.011 * pulse + 0.014 * systolic + 0.008 \
                                       * diastolic + 0.014 * age + 0.008 \
                                       * weight - 0.009 * height - 0.27

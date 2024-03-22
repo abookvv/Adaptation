@@ -1,10 +1,8 @@
-
 from sqlite3 import *
 
 
 con = connect(rf'../Screens/dataBase.sqLite')
 cursor = con.cursor()
-
 
 
 

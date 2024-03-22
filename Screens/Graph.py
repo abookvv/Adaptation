@@ -5,6 +5,7 @@ from kivymd.uix.button import MDRectangleFlatButton
 
 
 class GraphScreen(Screen):
+
     def __init__(self):
         super().__init__()
         self.name = 'Graph'
@@ -15,6 +16,7 @@ class GraphScreen(Screen):
                                         pos_hint={'center_x': .9, 'center_y': .1})
         go_Back.bind(on_press=self.to_main_screen)
         layout.add_widget(go_Back)
+
 
     def to_main_screen(self, *args):
         self.manager.transition.direction = 'right'
