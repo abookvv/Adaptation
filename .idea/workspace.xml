@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a40b2191-25e0-44d8-8026-6bd02f668c9d" name="Changes" comment="" />
+    <list default="true" id="a40b2191-25e0-44d8-8026-6bd02f668c9d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screens/Calculator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Screens/Calculator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screens/Graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/Screens/Graph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screens/dataBase.sqLite" beforeDir="false" afterPath="$PROJECT_DIR$/Screens/dataBase.sqLite" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -96,9 +101,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="setup" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Adaption" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/AppData/Local/Temp/9a42853b-4919-4ddc-825e-cbc8eafd0b6c_master.zip.b6c/graph-master" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/AppData/Local/Temp/9a42853b-4919-4ddc-825e-cbc8eafd0b6c_master.zip.b6c/graph-master/setup.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.Main" />
+        <item itemvalue="Python.setup" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.init_database" />
       </list>

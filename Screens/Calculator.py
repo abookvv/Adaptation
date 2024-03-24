@@ -24,13 +24,10 @@ class CalculatorScreen(Screen):
         speed_dial = MDFloatingActionButtonSpeedDial(hint_animation=True)
         speed_dial.data = {
             'Account': ['account',
-                        "on_press", lambda x: print("pressed account"),
                         'on_release', self.account],
             'Graph': ['graph',
-                      "on_press", lambda x: print("pressed graph"),
                       'on_release', self.graph],
             'Instruction': ['instraution',
-                      "on_press", lambda x: print("pressed instruction"),
                       'on_release', self.instruction]
         }
         speed_dial.root_button_anim = True
