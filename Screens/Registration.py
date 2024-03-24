@@ -74,10 +74,10 @@ class RegistrZero(Screen):
         self.add_widget(layout)
 
     def save_password(self, *args):
-        if self.button_password.text.isdigit() == True and len(self.button_password.text) == 6:
+        if self.button_password.text.isdigit() == True and len(self.button_password.text) == 6 and user.password_origin() and len(self.button_email.text) != 0:
+
             user.password = self.button_password.text
             user.email = self.button_email.text
-            print(user.password)
 
             self.manager.transition.direction = 'up'
             self.manager.current = "RegistrOne"
@@ -140,8 +140,6 @@ class RegistrOne(Screen):
             user.age = self.button_age.text
             user.weight = self.button_weight.text
             user.height = self.button_height.text
-
-            print(user.age,user.weight,user.height)
             user.create()
             self.manager.transition.direction = 'up'
             self.manager.current = "RegistrTwo"
@@ -221,7 +219,6 @@ class LogInScreen(Screen):
     def password_check(self, *args):
         user.password = self.password_chec.text
         if user.check_props():
-            print(user.password)
             self.manager.transition.direction = 'up'
             self.manager.current = "CalculatorScreen"
         else:

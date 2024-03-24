@@ -16,7 +16,7 @@ class User():
         self.age = age
         self.height = height
         self.weight = weight
-        self.password = password
+        self.password = (password)
         self.email = email
         self.language = language
 
@@ -37,6 +37,17 @@ class User():
             """)
         con.commit()
 
+    def password_origin(self):
+        cursor.execute(
+            f"""
+            SELECT Password FROM Users
+            WHERE Password = {self.password};
+                """)
+        res = cursor.fetchall()
+        print(res)
+        if len(res) == 0:
+            return True
+        return False
     def check_props(self):
         cursor.execute(
             f"""
@@ -44,7 +55,6 @@ class User():
             WHERE Password = {self.password};
                 """)
         res = cursor.fetchall()
-        print(res)
         if len(res) != 0:
             self.email = res[0][0]
             self.age = res[0][1]
@@ -52,7 +62,6 @@ class User():
             self.weight = res[0][3]
             self.password = res[0][4]
             self.language = res[0][5]
-            print(self.password)
             return True
         else:
             return False
